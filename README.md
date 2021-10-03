@@ -142,6 +142,10 @@ We also have 4 legacy certifications dating back to our 2015 curriculum, which i
 - Legacy Back End Development Certification
 - Legacy Information Security and Quality Assurance Certification
 
+#### Legacy Full Stack Development Certification
+
+Once you have earned the Responsive Web Design, Algorithms and Data Structures, Front End Development Libraries, Data Visualization, Back End Development and APIs, and Legacy Information Security and Quality Assurance certifications, you'll be able to claim your freeCodeCamp.org Full Stack Development Certification. This distinction signifies that you've completed around 1,800 hours of coding with a wide range of web development tools.
+
 ### The Learning Platform
 
 This code is running live at [freeCodeCamp.org](https://www.freecodecamp.org).
