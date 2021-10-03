@@ -11,16 +11,4 @@ module.exports = {
     // CSS Modules - match files that end with 'module.css'
     '\\.module\\.css$': 'identity-obj-proxy',
     '^lodash-es$': 'lodash'
-  },
-  globals: {
-    __PATH_PREFIX__: ''
-  },
-  verbose: true,
-  transform: {
-    '^.+\\.[jt]sx?$': '<rootDir>/jest.transform.js'
-  },
-  roots: ['.', './client', './api-server'],
-  transformIgnorePatterns: ['node_modules/(?!(gatsby)/)'],
-  setupFilesAfterEnv: ['./jest.setup.js'],
-  testEnvironment: 'jsdom'
-};
+  }
