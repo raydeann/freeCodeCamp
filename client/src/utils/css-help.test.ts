@@ -16,19 +16,6 @@ describe('css-help', () => {
     const conditionText = mediaRule.media[0];
     mediaRule.conditionText = conditionText;
   });
-  describe('getStyle', () => {
-    it('should return an ExtendedCSSStyleDeclartion object of length 1', () => {
-      expect(t.getStyle('*')?.length).toEqual(1);
-    });
-    it('should return a non-empty ExtendedCSSStyleDeclaration object', () => {
-      expect(t.getStyle('.bb1')).toBeTruthy();
-    });
-    it('should return a whitespaceless string', () => {
-      expect(t.getStyle('.bb1d')?.getPropVal('background', true)).toEqual(
-        'linear-gradient(var(--building-color1)50%,var(--window-color1))'
-      );
-    });
-  });
   describe('isPropertyUsed', () => {
     it('should return true on existing properties', () => {
       expect(t.isPropertyUsed('height')).toBeTruthy();
