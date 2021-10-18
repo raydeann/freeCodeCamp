@@ -91,22 +91,6 @@ const handleRejection = err => {
 const dom = new jsdom.JSDOM('');
 global.document = dom.window.document;
 
-const oldRunnerFail = Mocha.Runner.prototype.fail;
-Mocha.Runner.prototype.fail = function (test, err) {
-  if (err instanceof AssertionError) {
-    const errMessage = String(err.message || '');
-    const assertIndex = errMessage.indexOf(': expected');
-    if (assertIndex !== -1) {
-      err.message = errMessage.slice(0, assertIndex);
-    }
-    // Don't show stacktrace for assertion errors.
-    if (err.stack) {
-      delete err.stack;
-    }
-  }
-  return oldRunnerFail.call(this, test, err);
-};
-
 async function newPageContext(browser) {
   const page = await browser.newPage();
   // it's needed for workers as context.
