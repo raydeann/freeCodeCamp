@@ -19,4 +19,8 @@ exports.unDasherize = function unDasherize(name) {
       .replace(/[^a-z\d\s]/gi, '')
       .trim()
   );
+  
+exports.nameify = function nameify(str) {
+  return ('' + str).replace(/[^a-z\d\s]/gi, '');
+};
 };
