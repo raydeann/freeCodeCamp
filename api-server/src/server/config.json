@@ -9,10 +9,6 @@
       "normalizeHttpPath": false,
       "xml": true
     },
-    "json": {
-      "strict": true,
-      "limit": "100kb"
-    },
     "urlencoded": {
       "extended": true,
       "limit": "100kb"
