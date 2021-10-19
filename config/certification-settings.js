@@ -45,7 +45,6 @@ const completionHours = {
   [certTypes.respWebDesign]: 300,
   [certTypes.frontEndDevLibs]: 300,
   [certTypes.jsAlgoDataStruct]: 300,
-  [certTypes.dataVis2018]: 300,
   [certTypes.apisMicroservices]: 300,
   [certTypes.qaV7]: 300,
   [certTypes.infosecV7]: 300,
