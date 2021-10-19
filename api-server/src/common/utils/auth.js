@@ -28,18 +28,6 @@ export const renderSignInEmail = loopback.template(
   )
 );
 
-export const renderEmailChangeEmail = loopback.template(
-  path.join(
-    __dirname,
-    '..',
-    '..',
-    'server',
-    'views',
-    'emails',
-    'user-request-update-email.ejs'
-  )
-);
-
 export function getWaitPeriod(ttl) {
   const fiveMinutesAgo = moment().subtract(5, 'minutes');
   const lastEmailSentAt = moment(new Date(ttl || null));
