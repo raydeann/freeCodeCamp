@@ -3,6 +3,7 @@ const createDebugger = require('debug');
 const _ = require('lodash');
 
 const log = createDebugger('fcc:server:production-start');
+const log = createDebugger('fcc:server:production-start');
 const startTime = Date.now();
 // force logger to always output
 // this may be brittle
